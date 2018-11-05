@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Exercice 1</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.3/angular.min.js"></script>
+</head>
+<body ng-app>
+  <h1>Exercices AngularJS - Partie 4  Exercice 1 : Les directives</h1>
+  <h3>Faire une page HTML contenant un bouton + , un bouton - et un paragraphe. Au clic sur le bouton + incrémenter le chiffre présent dans le paragraphe de 1. Au clic sur le bouton - décrémenter le chiffre de 1.</h3>
+  <!-- ng-click : directive Angular qui indique l'action à effectuer-->
+  <!-- ng-init initialise la valeur de départ -->
+  <button ng-click="count = count + 1" ng-init="count=0">+</button>
+  <button ng-click="count = count - 1" ng-init="count=0">-</button>
+  <p> Le décompte est de : {{count}}</p>
+</body>
+</html>
